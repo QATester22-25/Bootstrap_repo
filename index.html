@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Aurora Tours - Travel With Us</title>
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="index.html">Sun & Travel</a>
+      <!--Nav bar toggler button-->
+      <button class="navbar-toggler" id="nav-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <div class="input-group my-2 me-5">
+            <input type="text" class="form-control border-start-0" placeholder="Search...">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+
+
+          <!--Services nav link-->
+          <li class="nav-item mx-2" id="service">
+            <a class="nav-link   my-2" data-bs-toggle="offcanvas" href="#servicesOffcanvas" role="button">
+              Services
+            </a>
+          </li>
+          <!--Destination nav link-->
+          <li class="nav-item mx-2" id="destination">
+            <a class="nav-link my-2" aria-current="page" href="#destinations">Destinations</a>
+          </li>
+          <!--Flights nav link-->
+          <li class="nav-item  mx-2" id="flights-dropdown">
+            <a class="nav-link  my-2" data-bs-toggle="offcanvas" href="#flightsoffcanvas" role="button">
+              Flights
+            </a>
+          </li>
+          <!--Register nav link-->
+          <li class="nav-item mx-2" id="register">
+            <a class="nav-link my-2 active" href="#register">Register</a>
+          </li>
+          </li>
+          <!--Contact nav link-->
+          <li class="nav-item mx-2" id="contact">
+            <a class="nav-link my-2" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Services Menu offcanvas-top-->
+  <div class="offcanvas offcanvas-top offcanvas-custom" tabindex="-1" id="servicesOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title services-title">Our Services</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h6 class="fw-bold hotel-list-title">Hotels</h6>
+            <ul class="list-unstyled hotels-list">
+              <li><a href="#" class="text-decoration-none">Tunis</a></li>
+              <li><a href="#" class="text-decoration-none">Paris</a></li>
+              <li><a href="#" class="text-decoration-none">Dubai</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis</a></li>
+              <li><a href="#" class="text-decoration-none">Paris</a></li>
+              <li><a href="#" class="text-decoration-none">Dubai</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <img class="offcanvas-img offcanvas-services-img" src="Images/hotel.jpg" alt="flight-img">
+          </div>
+          <div class="col-md-2">
+            <h6 class="fw-bold travel-packages-list-title">Travel Packages</h6>
+            <ul class="list-unstyled travel-packages-list">
+              <li><a href="#" class="text-decoration-none">Honeymoon</a></li>
+              <li><a href="#" class="text-decoration-none">Family Trips</a></li>
+              <li><a href="#" class="text-decoration-none">VIP Tours</a></li>
+              <li><a href="#" class="text-decoration-none">Honeymoon</a></li>
+              <li><a href="#" class="text-decoration-none">Family Trips</a></li>
+              <li><a href="#" class="text-decoration-none">VIP Tours</a></li>
+              <li><a href="#" class="text-decoration-none">Honeymoon</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4  ">
+            <img class="offcanvas-img offcanvas-services-img" src="Images/trip.jpg" alt="flight-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Flights menu offcanvas-->
+  <div class="offcanvas offcanvas-bottom  offcanvas-2-custom" tabindex="-1" id="flightsoffcanvas"
+    data-bs-scroll="false">
+    <button type="button" class="btn-close text-reset ms-auto me-1 mt-1" data-bs-dismiss="offcanvas"></button>
+    <div class="offcanvas-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h5 class="fw-bold text-center flights-title">Flights</h5>
+          </div>
+          <div class="col-2">
+            <ul class="list-unstyled text-left flights-list flights-list-1">
+              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Londres</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Madrid</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="list-unstyled text-left flights-list flights-list-2">
+              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Londres</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Madrid</a></li>
+              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
+            </ul>
+          </div>
+          <div class="col-7">
+            <img class="offcanvas-img offcanvas-flight-img" src="Images/plane2.jpg" alt="flight-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <main>
+    <!--Boking modal-->
+    <div class=" modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" id="email1" class="form-control" placeholder="Your Email Here">
+                    <label for="email1">Email Adress</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Amsterdam,Pays-Bas $499</option>
+                      <option>Athènes,Grèce $521</option>
+                      <option>Bangkok,Thaïlande $198</option>
+                      <option>Barcelone,Espagne $374</option>
+                      <option>Bruxelles,Belgique $385</option>
+                      <option>Budapest,Hongrie $244</option>
+                      <option>Buenos Aires,Argentine $329</option>
+                      <option>Delhi,Inde $153</option>
+                      <option>Dubaï,Émirats arabes unis $1,020</option>
+                      <option>Istanbul,Turquie $443</option>
+                      <option>Le Caire,Egypte $189</option>
+                      <option>Lisbonne,Portugal $298</option>
+                      <option>Londres,Royaume-Uni $958</option>
+                      <option>Madrid,Espagne $374</option>
+                      <option>Marrakech,Maroc $212</option>
+                      <option>Mexico City,Mexique $276</option>
+                      <option>New York,États-Unis $1,234</option>
+                      <option>Oslo,Norvège $687</option>
+                      <option>Paris,France $489</option>
+                      <option>Pékin,Chine $879</option>
+                      <option>Prague,République tchèque $291</option>
+                      <option>Rio de Janeiro,Brésil $457</option>
+                      <option>Rome,Italie $672</option>
+                      <option>Split,Croatie $311</option>
+                      <option>Stockholm,Suède $542</option>
+                      <option>Sydney,Australie $1,765</option>
+                      <option>Tokyo,Japon $1,102</option>
+                      <option>Toronto,Canada $611</option>
+                      <option>Varsovie,Pologne $238</option>
+                      <option>Vienne,Autriche $462</option>
+                      <option>Zurich,Suisse $1,149</option>
+
+                    </select>
+                    <label for="select1">Pick a tour</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Carrousel-->
+    <section id="carouselExample" class="carousel slide p-auto">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class=" carousel-inner">
+
+        <div class="carousel-item active c-item" data-bs-interval="3000">
+          <img src="Images/anders-jilden-cYrMQA7a3Wc-unsplash.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5">
+            <p class="fs-2 mt-5">Explore More</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Smart Travel</h1>
+            <button class="btn btn-primary mt-3 px-2 py-1 fs-4" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book Now</button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item" data-bs-interval="3000">
+          <img src="Images/Hero_img.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5">
+            <p class="fs-2  mt-5">The Season has Arrived</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Easy Booking</h1>
+            <button class="btn btn-primary mt-3 px-2 py-1 fs-4" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book Now</button>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item" data-bs-interval="3000">
+          <img src="Images/sara-dubler-Koei_7yYtIo-unsplash.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5">
+            <p class="fs-2 mt-5">Wanderlust Adventures</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Plan Ahead</h1>
+            <button class="btn btn-primary mt-3 px-2 py-1 fs-4" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!--Overview section-->
+    <section class="overview" id="overView">
+      <div class="container h-100  d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <!--we can write col without -4 if all colomns are aqual-->
+          <div class="col-lg">
+            <i class="bi bi-airplane-engines-fill me-2"></i>
+            3 Amazing Destinations
+          </div>
+          <div class="col-lg">
+            <i class="bi bi-wallet-fill me-2"></i>
+            Only pay 5$up front
+          </div>
+          <div class="col-lg">
+            <i class="bi bi-patch-check-fill me-2"></i>
+            1000's of customers
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Best destinations section-->
+    <section id="best_destinations" class="pt-lg-5">
+      <h2 class="text-center my-5">Best Destinations</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg my-2">
+            <div class="card custom-card">
+              <img src="Images/amsterdam.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Amsterdam,Pays-Bas $499</h5>
+                <p class="card-text">Discover iconic landmarks, the Eiffel Tower and Notre-Dame Cathedral,
+                  world-class
+                  museums such as the Louvre and Musée
+                  d'Orsay.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-2">
+            <div class="card custom-card">
+              <img src="Images/pekin.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pékin,Chine $879</h5>
+                <p class="card-text">Discover historic landmarks, the Hagia Sophia, Blue Mosque, and Topkapi
+                  Palace,
+                  and
+                  iconic sites such as the Grand Bazaar,
+                  Spice Bazaar, and Basilica Cistern.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--Destinations section-->
+    <section id="destinations" class="pt-lg-5">
+      <h2 class="text-center my-4">Destinations</h2>
+      <div class="container">
+        <p class="text-center">Discover a world of attractive destinations from stunning natural landscapes like
+          Ha Long
+          Bay in Vietnam and
+          the Swiss
+          Alps to vibrant cultural hubs like San Miguel de Allende, Mexico, and the historical sites of Egypt's
+          Valley
+          of
+          the
+          Kings.</p>
+        <div class="row">
+          <div class="col-lg my-4">
+            <div class="card custom-card">
+              <img src="Images/amsterdam.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Amsterdam,Pays-Bas $499</h5>
+                <p class="card-text">Discover iconic landmarks, the Eiffel Tower and Notre-Dame Cathedral,
+                  world-class
+                  museums such as the Louvre and Musée
+                  d'Orsay.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-4">
+            <div class="card custom-card">
+              <img src="Images/pekin.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pékin,Chine $879</h5>
+                <p class="card-text">Discover historic landmarks, the Hagia Sophia, Blue Mosque, and Topkapi
+                  Palace, and
+                  iconic sites such as the Grand Bazaar,
+                  Spice Bazaar, and Basilica Cistern.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-4">
+            <div class="card custom-card">
+              <img src="Images/varsovia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Varsovie,Pologne $238</h5>
+                <p class="card-text">Discover ancient monuments, the Colosseum and the Pantheon, explore Vatican
+                  City
+                  including St. Peter's Basilica and the
+                  Vatican Museums.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg my-2">
+            <div class="card custom-card">
+              <img src="Images/Delhi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Delhi,Inde $153</h5>
+                <p class="card-text">Discover iconic landmarks, the Eiffel Tower and Notre-Dame Cathedral,
+                  world-class
+                  museums such as the Louvre and Musée
+                  d'Orsay.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-2">
+            <div class="card custom-card">
+              <img src="Images/Londres.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Londres,Royaume-Uni $958</h5>
+                <p class="card-text">Discover historic landmarks, the Hagia Sophia, Blue Mosque, and Topkapi
+                  Palace, and
+                  iconic sites such as the Grand Bazaar,
+                  Spice Bazaar, and Basilica Cistern.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg my-2">
+            <div class="card custom-card">
+              <img src="Images/Maroc.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Marrakech,Maroc $212</h5>
+                <p class="card-text">Discover ancient monuments, the Colosseum and the Pantheon, explore Vatican
+                  City
+                  including St. Peter's Basilica and the
+                  Vatican Museums.
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FAQ section-->
+    <section id="faq" class="py-lg-4">
+      <h2 class="my-5 text-center">FAQ</h2>
+      <div class="container">
+        <div class="accordion w-75 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                What about flights?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Flights </strong>Live in 57 countries and territories, available
+                to customers currently in EMEA, LATAM, NORAM and APAC
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Is there a car rental service?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Car Rental </strong>You can pick up a car in over 45,000 locations, across 144 countries
+                We work with over 200 car rental suppliers across the globe
+                and provide free cancellation for all car rental customers up to 48 hours before pick up and
+                customer
+                service support in over 30 languages
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What about public transport?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>pre-book taxi types </strong>We offer customers a range of different
+                pre-book taxi types (vehicles) in 600+ cities, across 140+ countries Electric pre-book taxis
+                currently
+                available in 1,300 cities. Booking.com also offers a range of public transportation options in 50
+                cities
+                (*only accessible to travelers with an existing accommodation reservation)
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!--footer-->
+  <footer class="bg-dark py-3 mt-5">
+    <div class="container text-light text-center mb-5">
+      <p class="display-5 mb-3">Sun & Travel</p>
+      <!--text-white-50 50% opacity-->
+      <small class="text-white-50 mb-3">&copy; Copyright by ByteGrad. All Rights Reserved.</small>
+    </div>
+
+  </footer>
+
+  <script>
+
+    document.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      const packages = document.querySelector("#destinations");
+
+      // Distance from the top of the page to the #overView section
+      const triggerPoint = packages.offsetTop;
+
+      if (window.scrollY >= triggerPoint) {
+        navbar.classList.add("faded");   // navbar hides
+      } else {
+        navbar.classList.remove("faded"); // navbar shows
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const el = document.getElementById("carouselExample");
+
+
+      let carousel = new bootstrap.Carousel(el, {
+        interval: 3000,
+        ride: false,
+      });
+
+      let autoplayStarted = false;
+
+      // Controls
+      const prevBtn = el.querySelector(".carousel-control-prev");
+      const nextBtn = el.querySelector(".carousel-control-next");
+
+      function startAutoplay() {
+        if (!autoplayStarted) {
+          carousel.cycle();
+          autoplayStarted = true;
+        }
+      }
+
+      // Start autoplay only after first user click
+      prevBtn.addEventListener("click", startAutoplay);
+      nextBtn.addEventListener("click", startAutoplay);
+    });
+
+  </script>
+</body>
+
+</html>
