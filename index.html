@@ -27,15 +27,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+          <!--navbar search -->
           <div class="input-group my-2 me-5">
             <input type="text" class="form-control border-start-0" placeholder="Search...">
             <span class="input-group-text bg-white border-end-0">
               <i class="bi bi-search"></i>
             </span>
           </div>
-
-
           <!--Services nav link-->
           <li class="nav-item mx-2" id="service">
             <a class="nav-link   my-2" data-bs-toggle="offcanvas" href="#servicesOffcanvas" role="button">
@@ -54,7 +52,8 @@
           </li>
           <!--Register nav link-->
           <li class="nav-item mx-2" id="register">
-            <a class="nav-link my-2 active" href="#register">Register</a>
+            <a class="nav-link my-2 " href="#floating-modal" data-bs-toggle="modal" data-bs-target="#floating-modal"
+              role="button">Register</a>
           </li>
           </li>
           <!--Contact nav link-->
@@ -194,7 +193,6 @@
                       <option>Varsovie,Pologne $238</option>
                       <option>Vienne,Autriche $462</option>
                       <option>Zurich,Suisse $1,149</option>
-
                     </select>
                     <label for="select1">Pick a tour</label>
                   </div>
@@ -209,6 +207,36 @@
         </div>
       </div>
     </div>
+    <!--floating form-->
+    <div class=" modal fade" tabindex="-1" id="floating-modal" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3" id="floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Retype Password">
+              <label for="floatingPassword">Retype Password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Carrousel-->
     <section id="carouselExample" class="carousel slide p-auto">
       <div class="carousel-indicators">
