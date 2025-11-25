@@ -236,25 +236,25 @@
         </div>
       </div>
     </div>
-
     <!--Contact modal-->
     <div class=" modal fade" tabindex="-1" id="contact-modal">
       <div class="modal-dialog modal-dialog-centered modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Contact Us</h5>
+            <h5 class="modal-title ms-5">Contact Us</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <img src="Images/explaining-service.png" alt="Services-img">
+              <div class="col">
+                <div class="col-md-6 m-2 me-5">
+                  <img src="Images/contact.jpg" class="contact-img mb-4 w-100" alt="Services-img">
                 </div>
-                <div class="col-4">
-                  <h3>Have questions?<br>
+                <div class="col-md-4 my-auto">
+                  <h3 class="mb-4">Have questions?<br>
                     Shoot us an email</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eum aliquam voluptatem explicabo
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eum aliquam
+                    voluptatem explicabo
                     eligendi veritatis saepe, magni molestias velit numquam est autem facere soluta. Fugiat tempora
                     sequi
                     fuga natus assumenda.
@@ -262,34 +262,29 @@
                 </div>
               </div>
             </div>
-
             <div class="container">
-              <div class="row">
-                <div class="col-6 mt-3">
-                  <h5>How can we help?</h5>
-                  <div class="form-floating">
-                    <select id="select1" class="form-select">
-                      <option>Family Trips</option>
-                      <option>Honeymoon</option>
-                      <option>Hotels</option>
-                      <option>Rental</option>
-                      <option>VIP Tours</option>
-                    </select>
-                    <label for="select1">Interested By</label>
-                  </div>
-                </div>
-                <div class="col-6 mt-3">
-                  <div class="form-floating mb-3" id="floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="col">
+                <div class="col-md-6 my-auto me-auto">
+                  <div class="form-floating mb-4" style="height: 50px;" id="floating">
+                    <input type="email" class="form-control" id="floatingInput">
                     <label for="floatingInput">Email address</label>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                  <div class="form-floating mb-2">
+                    <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
+                    <label for="floatingTextarea">Enter your message here</label>
                   </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Retype Password">
-                    <label for="floatingPassword">Confirm Password</label>
+                </div>
+                <div class="col-md-6 me-auto">
+                  <h5>You are interested in?</h5>
+                  <div class="input-group">
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                      <option selected value="1">Family Trips</option>
+                      <option value="2">Honeymoon</option>
+                      <option value="3">Hotels</option>
+                      <option value="4">VIP Tours</option>
+                      <option value="5">Rental</option>
+                    </select>
+                    <button class="btn btn-outline-success" type="button">Submit</button>
                   </div>
                 </div>
               </div>
