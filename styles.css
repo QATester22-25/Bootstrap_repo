@@ -37,11 +37,11 @@
 }
 
 .offcanvas-body{
-  background-color: rgba(168, 192, 237, 0.412);
+  background-color: rgb(255, 255, 255);
   margin: 0 20px 20px 20px;
   border-radius: 10px;
   overflow-y: hidden !important;  
-  box-shadow: 5px 8px 10px rgb(64, 58, 158);
+  box-shadow: 3px 5px 8px rgba(65, 58, 158, 0.52);
 }
 
 .offcanvas-flight-img{
@@ -51,7 +51,7 @@
   margin-left: 30px;
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 5px 8px 10px rgb(64, 58, 158);
+  box-shadow: 3px 5px 8px rgba(65, 58, 158, 0.471);
 }
 
 .flights-list-1 {
@@ -80,7 +80,6 @@
   color: rgba(21, 44, 116, 0.986);
   text-align: center;
   padding: 0;
-  /* margin-left: 20px; */
   font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -127,8 +126,9 @@
   width: 100%;
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 5px 8px 10px rgb(64, 58, 158);
+  box-shadow: 3px 5px 8px rgba(65, 58, 158, 0.461);
 }
+
 /*Remove Bootstrap height limits */
 .offcanvas-custom {
   max-height: none !important;
