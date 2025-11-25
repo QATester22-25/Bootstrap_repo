@@ -154,6 +154,11 @@
   opacity: 1;
 }
 
+.contact-img{
+  height: 300px;
+  width: 100%;
+}
+
 
 /*caroussel*/
 .c-item{
