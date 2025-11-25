@@ -58,7 +58,8 @@
           </li>
           <!--Contact nav link-->
           <li class="nav-item mx-2" id="contact">
-            <a class="nav-link my-2" href="#contact">Contact</a>
+            <a class="nav-link my-2" href="#contact-modal" data-bs-toggle="modal" data-bs-target="#contact-modal"
+              role="button">Contact</a>
           </li>
         </ul>
       </div>
@@ -207,7 +208,7 @@
         </div>
       </div>
     </div>
-    <!--floating form-->
+    <!--Register modal-->
     <div class=" modal fade" tabindex="-1" id="floating-modal" data-bs-backdrop="static">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
@@ -236,6 +237,72 @@
       </div>
     </div>
 
+    <!--Contact modal-->
+    <div class=" modal fade" tabindex="-1" id="contact-modal">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <img src="Images/explaining-service.png" alt="Services-img">
+                </div>
+                <div class="col-4">
+                  <h3>Have questions?<br>
+                    Shoot us an email</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eum aliquam voluptatem explicabo
+                    eligendi veritatis saepe, magni molestias velit numquam est autem facere soluta. Fugiat tempora
+                    sequi
+                    fuga natus assumenda.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-6 mt-3">
+                  <h5>How can we help?</h5>
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Family Trips</option>
+                      <option>Honeymoon</option>
+                      <option>Hotels</option>
+                      <option>Rental</option>
+                      <option>VIP Tours</option>
+                    </select>
+                    <label for="select1">Interested By</label>
+                  </div>
+                </div>
+                <div class="col-6 mt-3">
+                  <div class="form-floating mb-3" id="floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Retype Password">
+                    <label for="floatingPassword">Confirm Password</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+    </div>
+    </div>
     <!--Carrousel-->
     <section id="carouselExample" class="carousel slide p-auto">
       <div class="carousel-indicators">
