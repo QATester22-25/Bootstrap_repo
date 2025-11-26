@@ -45,10 +45,39 @@
             <a class="nav-link my-2" aria-current="page" href="#destinations">Destinations</a>
           </li>
           <!--Flights nav link-->
-          <li class="nav-item  mx-2" id="flights-dropdown">
-            <a class="nav-link  my-2" data-bs-toggle="offcanvas" href="#flightsoffcanvas" role="button">
+          <li class="nav-item dropdown my-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="inside" aria-expanded="false">
               Flights
             </a>
+            <ul class="dropdown-menu dropdown-menu-scrollable text-left">
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <h6 class="dropdown-header ms-2">Pik a flight</h6>
+              </li>
+              <li><a class="dropdown-item active" href="#">Tunis – Rome</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Madrid</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Londres</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Istanbul</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Bangkok</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Thailand</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – China</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Moscow</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Ibiza</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Paris</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – USA</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – California</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – India</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Malaysia</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Canada</a></li>
+              <li><a class="dropdown-item" href="#">Tunis – Toronto</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
           </li>
           <!--Register nav link-->
           <li class="nav-item mx-2" id="register">
@@ -108,40 +137,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--Flights menu offcanvas-->
-  <div class="offcanvas offcanvas-bottom  offcanvas-2-custom" tabindex="-1" id="flightsoffcanvas"
-    data-bs-scroll="false">
-    <button type="button" class="btn-close text-reset ms-auto me-1 mt-1" data-bs-dismiss="offcanvas"></button>
-    <div class="offcanvas-body">
-      <div class="container">
-        <div class="row">
-          <div class="col-1">
-            <h5 class="fw-bold text-center flights-title">Flights</h5>
-          </div>
-          <div class="col-2">
-            <ul class="list-unstyled text-left flights-list flights-list-1">
-              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Londres</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Madrid</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul class="list-unstyled text-left flights-list flights-list-2">
-              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Londres</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Madrid</a></li>
-              <li><a href="#" class="text-decoration-none">Tunis – Bangkok</a></li>
-            </ul>
-          </div>
-          <div class="col-7">
-            <img class="offcanvas-img offcanvas-flight-img" src="Images/plane2.jpg" alt="flight-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   </div>
   <main>
     <!--Booking modal-->
@@ -285,7 +280,7 @@
                         <option value="4">VIP Tours</option>
                         <option value="5">Rental</option>
                       </select>
-                      <button class="btn btn-outline-success" type="button">Submit</button>
+                      <button class="btn btn-success" type="button">Submit</button>
                     </div>
                   </div>
                 </div>
