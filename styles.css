@@ -18,6 +18,10 @@
   pointer-events: none; 
 }
 
+.search-icon{
+  cursor: pointer;
+}
+
 .modal-header{
   background-color: rgba(30, 30, 116, 0.56);
   color: white;
@@ -231,5 +235,9 @@
   font-family: sans-serif;
   font-weight: 600;
   text-shadow: 2px 3px 5px rgb(12, 30, 111);
+ }
+
+ .home-icon{
+  color: white;
  }
 
