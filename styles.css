@@ -62,6 +62,26 @@
 
 /*Services menu*/
 
+.serv-img{
+  
+  height: 500px;
+  object-fit: initial;
+  filter:brightness(0.9);
+  border-radius: 10px;
+  box-shadow: 5px 8px 10px grey;
+}
+
+.serv-para{
+  font-family: sans-serif;
+  font-weight: 600;
+  color: maroon;
+  background-color: rgba(154, 71, 71, 0.682);
+  border-radius: 10px;
+  text-shadow: 2px 3px 5px rgb(102, 102, 105);
+  box-shadow: 5px 8px 10px rgb(16, 10, 188);
+
+}
+
 .services-title{
   color: rgba(21, 44, 116, 0.986);
   text-align: center;
@@ -73,37 +93,34 @@
 .hotel-list-title,.travel-packages-list-title{
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5rem;
-  color: rgba(21, 44, 116, 0.986);
-  text-align: left;
-  text-shadow: 2px 3px 8px rgb(38, 38, 106);
-   margin-left: 50px;
+  color: rgba(249, 249, 250, 0.986);
+  text-align: center;
+  text-shadow: 3px 5px 8px rgb(4, 4, 161);
 }
 
 
 .hotels-list li a{
-  color: rgba(21, 44, 116, 0.986);
+  color: rgba(23, 25, 128, 0.962);
   font-family:'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: 600;
-  margin-left: 50px;
 }
 
 .hotels-list li a:hover{
-  color:darkblue;
-  border-bottom: 2px ridge  rgba(6, 33, 114, 0.986);
+  color:whitesmoke;
+  border-bottom: 2px ridge  rgba(249, 250, 252, 0.986);
 }
 
 .travel-packages-list li a{
-  color: rgba(21, 44, 116, 0.986);
+ color: rgba(23, 25, 128, 0.962);
   font-family:'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: 600;
-  margin-left: 50px;
 }
 
 .travel-packages-list li a:hover{
-  color: rgba(6, 33, 114, 0.986);
-  border-bottom: 2px ridge  rgba(6, 33, 114, 0.986);
+  color:whitesmoke;
+  border-bottom: 2px ridge  rgba(249, 250, 252, 0.986);
 }
 
 .offcanvas-services-img{
