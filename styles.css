@@ -23,14 +23,30 @@
 }
 
 .modal-header{
-  background-color: rgba(30, 30, 116, 0.56);
+  background-color: #0e6ba8;
   color: white;
+  font-family: sans-serif;
+  text-shadow: 3px 5px 8px gray;
 }
+
 
 .modal-body{
   background-color: rgba(175, 185, 196, 0.54);
 }
 
+/*Contact*/
+.contact-title{
+  color: #fbdf05;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 3px 5px 8px  #030200;
+}
+
+.contact-para{
+  color: #0a2668;
+  font-family: sans-serif;
+  font-weight: 700;
+}
 
 
 /*flights menu*/
@@ -68,22 +84,22 @@
 
 .serv-img{
   
-  height: 500px;
+  height: 550px;
   object-fit: initial;
   filter:brightness(0.9);
   border-radius: 10px;
-  box-shadow: 5px 8px 10px grey;
+  box-shadow: 5px 8px 10px rgb(17, 72, 154);
 }
 
 .serv-para{
   font-family: sans-serif;
   font-weight: 600;
-  color: maroon;
-  background-color: rgba(154, 71, 71, 0.682);
+  color:white;
+  background-color:#7a5980;
   border-radius: 10px;
-  text-shadow: 2px 3px 5px rgb(102, 102, 105);
-  box-shadow: 5px 8px 10px rgb(16, 10, 188);
-
+  text-shadow: 5px 8px 5px rgb(90, 90, 97);
+  box-shadow: 8px 8px 10px rgb(255, 255, 255);
+  height: 450px;
 }
 
 .services-title{
@@ -96,35 +112,40 @@
 
 .hotel-list-title,.travel-packages-list-title{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  color: rgba(249, 249, 250, 0.986);
+  font-size: 2rem;
+  color:#cf9893;
   text-align: center;
-  text-shadow: 3px 5px 8px rgb(4, 4, 161);
+  text-shadow: 5px 8px 10px rgb(69, 64, 64);
 }
 
 
 .hotels-list li a{
-  color: rgba(23, 25, 128, 0.962);
+  color: #d1be9c;
   font-family:'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: 600;
+  margin: 10px;
 }
 
 .hotels-list li a:hover{
-  color:whitesmoke;
-  border-bottom: 2px ridge  rgba(249, 250, 252, 0.986);
+  color:#eef0f2;
+  font-size: large;
+  font-weight: 400;
+  margin: 0;
 }
 
 .travel-packages-list li a{
- color: rgba(23, 25, 128, 0.962);
+  color:#d1be9c;
   font-family:'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: 600;
+  margin: 10px;
 }
 
 .travel-packages-list li a:hover{
-  color:whitesmoke;
-  border-bottom: 2px ridge  rgba(249, 250, 252, 0.986);
+  color:#eef0f2;
+  font-size: large;
+  font-weight: 400;
 }
 
 .offcanvas-services-img{
@@ -181,13 +202,13 @@
 /*Overview section*/
 .overview{
   height: 150px;
-  background-color: #c5d3f5;
+  background-color: #68b0abd9;
   box-shadow:5px 8px 10px rgb(154, 154, 196);
 }
 
 /*Cards*/
 .card-img-top {
-  height: 200px;       
+  height: 180px;       
   object-fit: initial;
 }
 
@@ -205,38 +226,38 @@
 /*Best destinations*/
 
 #best_destinations{
-  background-color: rgba(30, 30, 116, 0.56);
-  box-shadow: 5px 8px 10px rgb(154, 154, 196);
+  background-color: #dddbcb;
+  box-shadow:  5px 8px 10px rgb(8, 0, 8);
 
 }
 
 .best-title{
-  color: rgb(255, 255, 255);
+  color: #0d3b66;
   font-family: sans-serif;
   font-weight: 600;
-  text-shadow: 2px 3px 5px rgb(12, 30, 111);
+  text-shadow: 2px 3px 5px  #7a8996;
 }
 
 /*Destinations*/
 
 #destinations{
-  background-color: rgba(30, 30, 116, 0.56);
-   box-shadow: 5px 8px 10px rgb(154, 154, 196);
+  background-color: #1b9aaa;
+   box-shadow: 5px 8px 10px rgb(8, 0, 8);
 }
 
 .dest-title{
-  color: rgb(255, 255, 255);
+  color:  #ffffff;
   font-family: sans-serif;
   font-weight: 600;
-  text-shadow: 2px 3px 5px rgb(12, 30, 111);
+  text-shadow: 2px 3px 5px rgb(205, 193, 193);
 }
 
 .dest-para{
-   color: rgb(249, 249, 250);
+   color:  #ebebeb;
   font-family: serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-shadow: 2px 3px 5px rgb(121, 122, 125);
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 2px 3px 5px  rgb(172, 186, 186);
 
 }
 
@@ -244,17 +265,27 @@
 
 
  #faq{
-  background-color: rgba(30, 30, 116, 0.56);
+  background-color: #f4d58d;
  }
 
  .faq-title{
-  color: rgb(255, 255, 255);
+  color: #774936;
   font-family: sans-serif;
   font-weight: 600;
   text-shadow: 2px 3px 5px rgb(12, 30, 111);
  }
 
+ .accordion-body {
+  background-color: #5e3023; 
+  color: #ebdbd9;
+}
+
+.accordion-button:not(.collapse) {
+  background-color: #7d4f50; 
+  color: #f1efef; /* Adjust text color if needed */
+}
+
  .home-icon{
-  color: white;
+  color:#5e3023;
  }
 
